@@ -1,0 +1,61 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <style>
+    .calculator {
+      width: 200px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .calculator input {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="result" disabled><br>
+    <input type="button" value="1" onclick="appendNumber(1)">
+    <input type="button" value="2" onclick="appendNumber(2)">
+    <input type="button" value="3" onclick="appendNumber(3)"><br>
+    <input type="button" value="4" onclick="appendNumber(4)">
+    <input type="button" value="5" onclick="appendNumber(5)">
+    <input type="button" value="6" onclick="appendNumber(6)"><br>
+    <input type="button" value="7" onclick="appendNumber(7)">
+    <input type="button" value="8" onclick="appendNumber(8)">
+    <input type="button" value="9" onclick="appendNumber(9)"><br>
+    <input type="button" value="0" onclick="appendNumber(0)">
+    <input type="button" value="+" onclick="performOperation('+')">
+    <input type="button" value="-" onclick="performOperation('-')"><br>
+    <input type="button" value="/" onclick="performOperation('/')">
+    <input type="button" value="*" onclick=performOperation('*')">
+    <input type="button" value="=" onclick="calculateResult()"><br>
+    <input type="button" value="Clear" onclick="clearResult()">
+  </div>
+
+  <script>
+    function appendNumber(number) {
+      document.getElementById("result").value += number;
+    }
+
+    function performOperation(operator) {
+      document.getElementById("result").value += operator;
+    }
+
+    function calculateResult() {
+      var expression = document.getElementById("result").value;
+      var result = eval(expression);
+      document.getElementById("result").value = result;
+    }
+
+    function clearResult() {
+      document.getElementById("result").value = "";
+    }
+  </script>
+</body>
+</html>
+```

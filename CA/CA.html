@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <title>CA</title>
+  </head>
+  </style>
+  <body bgcolor="white">
+  
+   <!-- FORM-->
+    <br>
+   <form action="#" class="form" method="post">
+    <fieldset class="login">
+        <legend align="left"><h2>Login</h2></legend>
+        <label for="Username"><b>Username*</b></label></br>
+        <input type="text" name="Username"></input>
+        <label for="Password"><b>Password*</b></label></br>
+        <label for="Password"><b>Password*</b></label></br><input type="Password" name="Password"></input>
+       </fieldset></form>
+       <br>
+        <form action="#" method="post">
+    <fieldset>
+        <legend align="left"><h2>Gender</h2></legend>
+      <label for="Gender"><b>Gender</b></label><br>
+    <input type="checkbox" name="gender"><b>Male</b><input type="checkbox" name="gender"><b>Female</b>
+    </fieldset></form>
+     
+     <br>
+        <form action="#" method="post">
+    <fieldset>
+      <legend align="left"><h2>Programming Skills</h2></legend>
+    <input type="checkbox">JavaScript</br><input type="checkbox">C++</br><input type="checkbox">C#</br>
+    </fieldset></form>
+       
+       <br>
+        <form action="#" method="post">
+    <fieldset>
+    <legend align="left"><h2>Fruits</h2></legend>
+    <label for="Choose a fruit:"><b>Choose a fruit:</b></label><br>
+    <select required>
+    <optgroup>Fruits</optgroup>
+    <option value=" disabled">Choose a fruit:</option>
+    <option value="Banana">Banana</option>
+    <option value="Apple">Apple</option>
+    <option value="Mango">Mango</option>
+    <option value="Pinapple">Pinapple</option>
+    <option value="Guava">Guava</option>
+    <option value="">Mango</option>
+  </select></fieldset></form>
+
+  <textarea cols="80" rows="15" placeholder="Enter your comment here"></textarea>
+   <br>
+    
+    <input type="submit" value="Send">
+    <input type="Reset" value="Reset">
+
+<button onclick="topFunction()" style="display: none; position: fixed; bottom: 20px; right: 30px; z-index: 99;">Top</button>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.querySelector("button").style.display = "block";
+    } else {
+        document.querySelector("button").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+  </body>
+  </html>
